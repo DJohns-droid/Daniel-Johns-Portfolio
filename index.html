@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <a href="index.html" class="tab active">Home</a>
-            <a href="about.html" class="tab">About</a>
-            <a href="projects.html" class="tab">Projects</a>
-            <a href="resume.html" class="tab">Resume</a>
-        </aside>
-        <main class="content">
-            <img src="images/personal_website/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Daniel [Last Name]</h1>
-            <p class="intro">I'm a passionate first-year Electrical Engineering major seeking hands-on experience and problem-solving challenges.</p>
-            <p class="description">Click on the tabs on the left to access my About page, Projects, and Resume.</p>
-            <h2>Social Media Links</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/yourgithub" target="_blank">
-                    <img src="images/github.png" alt="GitHub">
-                </a>
+        <nav class="sidebar">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="resume.html" class="nav-item">Resume</a>
+        </nav>
+        
+        <main class="content-box">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <!-- Replace with your actual image path -->
+                    <img src="placeholder-profile.jpg" alt="Your Name">
+                </div>
+                <h1>Your Name</h1>
+                <h2>Hello!</h2>
+                <p class="intro-text">
+                    I'm a passionate first-year Electrical Engineering major seeking hands-on experience 
+                    and problem-solving challenges.
+                </p>
+                <p class="navigation-hint">
+                    This website showcases my experience and projects. Click the tabs on the left to access links to my about page, projects, and resume.
+                </p>
+                
+                <div class="social-links">
+                    <h3>Social media links</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-icon github">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
