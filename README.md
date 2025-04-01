@@ -33,5 +33,4 @@ Feel free to reach out to me via:
 - LinkedIn: [https://www.linkedin.com/in/daniel-johnsgt/](https://www.linkedin.com/in/daniel-johnsgt/)
 - GitHub: [https://github.com/DJohns-droid](https://github.com/DJohns-droid)
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
