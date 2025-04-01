@@ -92,8 +92,8 @@ body {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 25px; /* Adjusted spacing */
