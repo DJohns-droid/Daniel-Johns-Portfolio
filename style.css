@@ -82,14 +82,17 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px 0;
+    height: 100%; /* Add this */
+    justify-content: center; /* Add this to center vertically */
+    min-height: calc(100vh - 80px); /* Adjust based on your padding */
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased from 150px */
+    height: 200px; /* Increased from 150px */
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased from 20px */
     border: 5px solid #f0f2f5;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
