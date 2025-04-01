@@ -4,7 +4,7 @@
 This repository contains the source code for my personal portfolio website, showcasing my experience, skills, and projects as an Electrical Engineering student at Georgia Tech.
 
 ## Live Website
-The website is hosted on GitHub Pages at: [[https://djohns-droid.github.io/your-repo-name](https://djohns-droid.github.io/your-repo-name](https://djohns-droid.github.io/Daniel-Johns-Portfolio/index.html))
+The website is hosted on GitHub Pages at: [https://djohns-droid.github.io/Daniel-Johns-Portfolio/index.html](https://djohns-droid.github.io/Daniel-Johns-Portfolio/index.html)
 
 ## Features
 - Clean, responsive design
