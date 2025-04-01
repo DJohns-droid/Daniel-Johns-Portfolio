@@ -6,6 +6,9 @@ This repository contains the source code for my personal portfolio website, show
 ## Live Website
 The website is hosted on GitHub Pages at: [https://djohns-droid.github.io/Daniel-Johns-Portfolio/index.html](https://djohns-droid.github.io/Daniel-Johns-Portfolio/index.html)
 
+## Website Preview
+![Daniel Johns Portfolio Screenshot](images/website_preview.png)
+
 ## Features
 - Clean, responsive design
 - Information about my academic background and technical skills
