@@ -3,30 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Your Name</title>
+    <title>About Me - Daniel Johns</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for the about page */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: #4a6df0;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #f0f2f5;
+        }
+
+        .about-section strong {
+            color: #333;
+        }
+
+        .about-section ul {
+            list-style-type: none;
+            padding-left: 10px;
+            margin-top: 15px; /* Added space after paragraph */
+        }
+
+        .about-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .about-section li::before {
+            content: "•";
+            color: #4a6df0;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-title {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-title .emoji {
+            margin-right: 10px;
+            color: #4a6df0;
+        }
+
+        .experience-company {
+            font-weight: 600;
+            color: #4a6df0;
+        }
+
+        .company-link {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .company-link:hover {
+            text-decoration: underline;
+        }
+
+        .experience-period {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .experience-description {
+            color: #555;
+        }
+
+        .highlight {
+            color: #4a6df0;
+            font-weight: 500;
+        }
+
+        .thread-link {
+            color: #4a6df0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .thread-link:hover {
+            color: #2345c0;
+            text-decoration: underline;
+        }
+
+        .future-interests {
+            margin-top: 15px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="about.html" class="nav-item active">About</a>
-            <a href="projects.html" class="nav-item">Projects</a>
-            <a href="resume.html" class="nav-item">Resume</a>
-        </nav>
-        
-        <main class="content-box">
-            <h1>About Me</h1>
-            <div class="about-content">
-                <!-- You'll add your personal content here later -->
-                <p>Content coming soon...</p>
+<div class="container">
+    <nav class="sidebar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item active">About</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+
+    <main class="content-box">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="about-section">
+                <h2>Education & Academic Focus</h2>
+                <p>I'm a first-year <strong>Electrical Engineering</strong> major at <strong>Georgia Tech</strong>, where I'm pursuing threads in <a href="https://ece.gatech.edu/circuit-technology-thread" class="thread-link">Circuit Technology</a> and <a href="https://ece.gatech.edu/robotics-autonomous-systems-thread" class="thread-link">Robotics</a> to deepen my expertise in automation and embedded systems. My coursework blends hardware and software, including:</p>
+                <ul>
+                    <li><strong>CS 1301</strong> (Intro to Python Programming)</li>
+                    <li><strong>ECE 2020</strong> (Intro to Digital Systems)</li>
+                </ul>
+                <p class="future-interests"><em>Future interests:</em> Control systems, FPGA design, and AI integration for robotics.</p>
             </div>
-        </main>
-    </div>
-    
-    <script src="script.js"></script>
+
+            <div class="about-section">
+                <h2>Technical Skills</h2>
+                <p>I leverage these tools to turn ideas into solutions:</p>
+                <ul>
+                    <li><strong>Programming:</strong> Python (Pandas, Streamlit, REST APIs), MATLAB, HTML/CSS</li>
+                    <li><strong>Engineering Tools:</strong> AutoCAD, Autodesk Inventor, VOTES Infinity (signal analysis)</li>
+                    <li><strong>Applied Skills:</strong> Data analysis, signal processing, LLM/AI integration</li>
+                    <li><strong>Certifications:</strong> IT Specialist (Software Development), Microsoft Word</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>Experience & Activities</h2>
+                <div class="experience-item">
+                    <div class="experience-title">
+                        <span class="emoji">🔹</span>
+                        <span>Incoming <strong>Controls & Automation Co-op</strong> @ <span class="experience-company"><a href="https://dennisgroup.com/" class="company-link" target="_blank">Dennis Group</a></span></span>
+                    </div>
+                    <div class="experience-period">(Summer 2026)</div>
+                    <div class="experience-description">
+                        <em>Preparing to dive into industrial automation</em>, I'll collaborate with engineers to design and troubleshoot control systems for food/beverage production—gaining hands-on experience in both PLC programming and hardware integration.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-title">
+                        <span class="emoji">🔹</span>
+                        <span><strong>Engineering Intern</strong> @ <span class="experience-company"><a href="https://cranenuclear.com/" class="company-link" target="_blank">Crane Nuclear</a></span></span>
+                    </div>
+                    <div class="experience-period">(2024)</div>
+                    <div class="experience-description">
+                        <em>My first step into applied engineering</em>, I investigated how strain gauges could predict valve wear, potentially saving thousands in maintenance costs. Analyzing signals with VOTES Infinity software taught me how theoretical concepts translate to real-world impact.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-title">
+                        <span class="emoji">🔹</span>
+                        <span><strong>Georgia Cycling League Coach</strong></span>
+                    </div>
+                    <div class="experience-period">(2024–Present)</div>
+                    <div class="experience-description">
+                        Leading an 80+ rider team, I combine technical precision (teaching bike handling) with leadership—skills I apply to engineering teamwork. Seeing young cyclists grow reminds me why mentorship matters in STEM too!
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>Goals</h2>
+                <ul>
+                    <li><strong>Short-term (2025):</strong> Secure a summer internship to apply my skills in <span class="highlight">signal processing or automation</span>.</li>
+                    <li><strong>Long-term:</strong> Lead projects in <span class="highlight">industrial robotics or smart systems</span>, combining circuit design with AI.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
