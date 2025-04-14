@@ -3,40 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Your Name</title>
+    <title>Projects - Daniel Johns</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V0Q4VWH42"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-5V0Q4VWH42');
-    </script>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="about.html" class="nav-item">About</a>
-            <a href="projects.html" class="nav-item active">Projects</a>
-            <a href="resume.html" class="nav-item">Resume</a>
-        </nav>
-        
-        <main class="content-box">
+<div class="container">
+    <nav class="sidebar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="projects.html" class="nav-item active">Projects</a>
+        <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+
+    <main class="content-box">
+        <div class="projects-header">
             <h1>Projects</h1>
-            <div class="projects-content">
-                <!-- You'll add your projects here later -->
-                <p>Content coming soon...</p>
+            <p class="projects-intro">Explore my technical projects below. Click on any project card to see more details.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-project="project1">
+                <div class="project-image">
+                    <img src="images/project1.jpg" alt="Security Access System">
+                </div>
+                <div class="project-info">
+                    <h3>Security Access System with LCD Display</h3>
+                    <p class="project-category">Embedded Systems</p>
+                </div>
             </div>
-        </main>
-    </div>
-    
-    <script src="script.js"></script>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-project="project2">
+                <div class="project-image">
+                    <img src="images/project2.jpg" alt="Weather Station">
+                </div>
+                <div class="project-info">
+                    <h3>IoT Weather Station</h3>
+                    <p class="project-category">Internet of Things</p>
+                </div>
+            </div>
+
+            <!-- Project 3 (Coming Soon) -->
+            <div class="project-card coming-soon">
+                <div class="project-image">
+                    <div class="coming-soon-overlay">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Future Project</h3>
+                    <p class="project-category">In Development</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Detail Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                    <span>Back to Projects</span>
+                </div>
+                <div class="modal-body">
+                    <!-- Content will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="index.js"></script>
+<script src="projects.js"></script>
 </body>
 </html>
