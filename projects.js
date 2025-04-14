@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     <div class="functionality-item">
                         <h4>Incorrect Code (Yellow LED):</h4>
-                        <p>Activated when an incorrect code is submitted. The LCD flashes "WRONG CODE" and the yellow LED pulses. User can retry until time expires.</p>
+                        <p>Activated when an incorrect code is submitte and the yellow LED switches on. User can retry until time expires.</p>
                         <div class="video-container">
                             <video controls class="demo-video" preload="auto" playsinline>
                                 <source src="videos/Yellow_Light.mp4" type="video/mp4">
