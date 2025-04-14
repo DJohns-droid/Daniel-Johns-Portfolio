@@ -20,7 +20,6 @@ The website is hosted on GitHub Pages at: [https://djohns-droid.github.io/Daniel
 - HTML5
 - CSS3
 - JavaScript
-- C++
 - GitHub Pages for hosting
 
 ## Pages
