@@ -461,3 +461,117 @@
         padding-left: 10px;
     }
 }
+
+/* Website Preview Link Styling */
+.website-preview {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.website-preview-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.website-preview-link:hover {
+    transform: translateY(-5px);
+}
+
+.website-preview-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.website-preview-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.website-preview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.website-preview-overlay span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.website-preview-container:hover .website-preview-overlay {
+    opacity: 1;
+}
+
+.website-preview-container:hover .website-preview-image {
+    filter: blur(2px);
+}
+
+.website-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Feature Section Styling */
+.feature-section {
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.feature-list li {
+    margin-bottom: 8px;
+}
+
+/* Tech Details Styling */
+.tech-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tech-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+}
+
+.tech-item h4 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+/* Showcase Item Styling */
+.showcase-item {
+    margin-bottom: 30px;
+}
+
+.showcase-item h4 {
+    margin-bottom: 15px;
+}
