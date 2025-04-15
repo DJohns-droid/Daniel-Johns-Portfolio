@@ -179,18 +179,190 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        project2: {
-            title: "IoT Weather Station",
-            category: "Internet of Things",
-            image: "images/project2.jpg",
-            description: "A connected weather station that collects temperature, humidity, and pressure data and transmits it to a cloud platform for analysis and visualization.",
-            challenge: "Ensuring reliable data transmission while minimizing power consumption was difficult, as the device needed to operate on battery power for extended periods.",
-            solution: "I implemented a low-power sleep mode and optimized the transmission protocol to send data in batches, significantly extending battery life while maintaining data integrity.",
-            techStack: ["ESP32", "Arduino", "IoT Protocols", "Sensor Integration", "Data Visualization"],
+         project2: {
+            title: "NASA Space Exploration Dashboard",
+            category: "Web Development & Data Visualization",
+            image: "images/project2.png",
+            content: `
+        <div class="project-overview">
+            <p>I developed a web application that provides interactive access to NASA's space imagery through two main components: a Mars Imagery Dashboard and NASA's Astronomy Picture of the Day Explorer. This project combines API integration, data visualization, and AI to create an engaging educational tool for exploring space imagery.</p>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Key Features</h3>
+            <div class="feature-section">
+                <h4>Mars Imagery Dashboard</h4>
+                <p>A real-time visualization tool displaying photos taken by NASA's Perseverance rover on Mars. Users can:</p>
+                <ul class="feature-list">
+                    <li>Select specific dates to view Martian photos</li>
+                    <li>Filter by different rover cameras (navigation cameras, hazard avoidance cameras)</li>
+                    <li>Adjust how many images to display (1-10)</li>
+                    <li>View statistics about photo distribution across different cameras</li>
+                    <li>See metadata including Earth date and Martian sol (day count)</li>
+                </ul>
+            </div>
+            
+            <div class="feature-section">
+                <h4>NASA Astronomy Picture of the Day (APOD) Explorer</h4>
+                <p>An interactive portal to NASA's famous daily astronomy images with AI-enhanced features:</p>
+                <ul class="feature-list">
+                    <li>Browse or randomly select astronomy pictures from 2024</li>
+                    <li>View high-quality images or embedded videos</li>
+                    <li>Read official NASA explanations</li>
+                    <li>Get AI-generated summaries of each picture (using Google's Gemini AI)</li>
+                    <li>Chat with an AI assistant to ask questions about the astronomy content</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Live Demo</h3>
+            <div class="website-preview">
+                <a href="https://webdevelopement3-s7baiebyqqp2olf3qh592n.streamlit.app/Mars_Dashboard" target="_blank" class="website-preview-link">
+                    <div class="website-preview-container">
+                        <img src="images/live_preview.png" alt="NASA Dashboard Preview" class="website-preview-image">
+                        <div class="website-preview-overlay">
+                            <span>Visit Website</span>
+                        </div>
+                    </div>
+                </a>
+                <p class="website-caption">Click to view the live NASA Space Exploration Dashboard</p>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Technical Highlights</h3>
+            <div class="tech-details">
+                <div class="tech-item">
+                    <h4>Streamlit Framework</h4>
+                    <p>Built using Python's Streamlit for rapid web application development with responsive UI components.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>NASA APIs Integration</h4>
+                    <p>Connected with NASA's Mars Rover Photos API and Astronomy Picture of the Day API to fetch real space data.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>AI Integration</h4>
+                    <p>Implemented Google's Gemini AI to generate summaries and power the interactive Q&A feature about astronomical content.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>Data Visualization</h4>
+                    <p>Created interactive charts showing photo distribution statistics using Streamlit's built-in visualization tools.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>Performance Optimization</h4>
+                    <p>Implemented data caching and optimized API calls to improve application responsiveness and reduce load times.</p>
+                </div>
+            </div>
+            
+            <div class="project-image-container">
+                <img src="images/diagram.png" alt="Project Architecture" class="detail-image">
+                <div class="image-caption">High-level architecture showing the integration between Streamlit, NASA APIs, and Gemini AI</div>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Application Showcase</h3>
+            
+            <div class="showcase-item">
+                <h4>Mars Rover Image Gallery</h4>
+                <div class="project-image-container">
+                    <img src="images/mars-rover-gallery.png" alt="Mars Rover Gallery" class="detail-image">
+                    <div class="image-caption">Interactive gallery showing Perseverance rover images with filtering options</div>
+                </div>
+            </div>
+            
+            <div class="showcase-item">
+                <h4>APOD Explorer with AI Insights</h4>
+                <div class="project-image-container">
+                    <img src="images/apod-explorer.png" alt="APOD Explorer Interface" class="detail-image">
+                    <div class="image-caption">Astronomy Picture of the Day explorer with AI-generated insights</div>
+                </div>
+            </div>
+            
+            <div class="showcase-item">
+                <h4>Data Visualization Components</h4>
+                <div class="project-image-container">
+                    <img src="images/data-visualization.png" alt="Data Visualization Charts" class="detail-image">
+                    <div class="image-caption">Interactive charts showing distribution of Mars rover photos by camera type</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Development Process</h3>
+            <div class="timeline">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Phase 1</div>
+                        <div class="timeline-content">Research and API exploration - tested NASA's APIs and identified key features</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Phase 2</div>
+                        <div class="timeline-content">Core architecture setup - built Streamlit application framework and basic UI components</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Phase 3</div>
+                        <div class="timeline-content">Feature implementation - developed Mars rover gallery and APOD explorer</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Phase 4</div>
+                        <div class="timeline-content">AI integration - connected Gemini API for content summarization and Q&A capabilities</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Phase 5</div>
+                        <div class="timeline-content">Optimization and polishing - implemented caching, improved UI/UX, and added responsive design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Challenges and Solutions</h3>
+            <div class="challenge-item">
+                <p><strong>API Rate Limiting:</strong> NASA APIs have strict rate limits. <em>Solution:</em> Implemented efficient caching mechanism to store responses and minimize API calls.</p>
+            </div>
+            <div class="challenge-item">
+                <p><strong>Large Image Loading:</strong> High-resolution NASA images caused slow page loads. <em>Solution:</em> Created thumbnail previews with option to view full-resolution images on demand.</p>
+            </div>
+            <div class="challenge-item">
+                <p><strong>AI Response Quality:</strong> Initial AI summaries were too technical or verbose. <em>Solution:</em> Refined prompting techniques to generate concise, educational content suitable for general audiences.</p>
+            </div>
+            <div class="challenge-item">
+                <p><strong>Data Visualization Complexity:</strong> Needed to show multi-dimensional data about rover images. <em>Solution:</em> Designed custom interactive charts that allow filtering and exploration of the dataset.</p>
+            </div>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Reflection</h3>
+            <p>This project serves as both a technical demonstration and educational tool, making NASA's vast collection of space imagery more accessible and interactive for the public. It showcases how APIs, data visualization, and AI can work together to create engaging experiences with real scientific data.</p>
+            
+            <p>The development process taught me valuable lessons about working with external APIs, implementing AI features responsibly, and designing intuitive data visualizations. The project also deepened my understanding of space exploration technology and astronomy, as I needed to ensure the application presented accurate and meaningful information.</p>
+            
+            <p>In future iterations, I plan to expand the range of NASA data sources, add more sophisticated AI interactions, and potentially incorporate 3D visualizations of planetary surfaces based on NASA's open-source terrain data.</p>
+        </div>
+        
+        <div class="project-detail-section">
+            <h3>Project Links</h3>
+            <div class="project-links">
+                <a href="https://webdevelopement3-s7baiebyqqp2olf3qh592n.streamlit.app/Mars_Dashboard" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/DJohns-droid/WebDevelopement3" target="_blank" class="project-link">GitHub Repository</a>
+            </div>
+        </div>
+    `,
+            techStack: ["Python", "Streamlit", "NASA APIs", "Google Gemini AI", "Data Visualization", "Web Development"],
             links: [
                 {
-                    text: "Project Demo",
-                    url: "https://your-weather-station-demo.com"
+                    text: "Live Demo",
+                    url: "https://webdevelopement3-s7baiebyqqp2olf3qh592n.streamlit.app/Mars_Dashboard"
+                },
+                {
+                    text: "GitHub Repository",
+                    url: "https://github.com/DJohns-droid/WebDevelopement3"
                 }
             ]
         }
