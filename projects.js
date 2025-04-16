@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li>Embedded C/C++ programming (Arduino IDE)</li>
                         <li>Circuit design & troubleshooting (breadboarding, component wiring)</li>
                         <li>Input/output handling (buttons, LCD, LEDs)</li>
-                        <li>Power management (external supply integration)</li>
                         <li>Iterative testing & debugging</li>
                     </ul>
                     <p><strong>Tools Used:</strong> Arduino Uno, LCD display, push buttons, LEDs, resistors, potentiometer, breadboard, jumper wires.</p>
